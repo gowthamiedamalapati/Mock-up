@@ -64,12 +64,22 @@
        padding-top: 100px;
        padding-bottom:0px ;
    }
+   .about{
+       animation-name: fadeInUp;
+   }
    .uses{
        display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
    }
+   .media-animation{
+    margin-bottom: 30px;
+    visibility: visible;
+ animation-duration: 2s;
+ animation-delay: 0.2s;
+ animation-name: fadeInLeft;
+}
    .section-head{
        margin-bottom: 40px;
        text-align: center;
@@ -84,6 +94,17 @@
     font-weight: 700;
     font-family: "Source Sans Pro", sans-serif;
    }
+   .wraper-effect{
+   border-radius: 50%;
+   position: absolute;
+   transition: all 0.5s;
+   height: 350px;
+   width: 350px;
+   background-color: rgba(255, 255, 255, 0.2);
+   /* right: -100%;
+   bottom: -100%; */
+   z-index: -1;
+   }
    .icon-bx-wraper{
     box-shadow: 0 0px 10px 4px rgb(31 66 135 / 10%);
     padding: 30px;
@@ -93,6 +114,8 @@
     overflow: hidden;
     z-index: 9;
     margin-bottom: 40px;
+    animation-name: fadeInUp;
+    visibility:visible;
    }
    .icon-bx-sm{
        width: 70px;
@@ -139,20 +162,78 @@
        padding-top: 100px;
        padding-bottom: 70px;
    }
+   
    .media img{
     height: auto;
     max-width: 100%;
     vertical-align: middle;
    }
-   .media-animation{
+   /* .media-animation{
        margin-bottom: 30px;
-   }
+       visibility: visible;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-name: fadeInLeft;
+   } */
    .media-conntent .section-head{
        text-align: left !important;
    }
    .media-conntent{
+    visibility: visible;
+    animation-duration: 2s;
+    animation-delay: 0.4s;
+    animation-name: fadeInRight;
       padding-left: 60px;
       padding-top: 100px;
+   }
+   .stats-content{
+    visibility: visible;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-name: fadeInRight;
+   }
+   .stats-media{
+    visibility: visible;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-name: fadeInLeft;
+   }
+   .studio-media{
+    visibility: visible;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-name: fadeInLeft;
+   }
+   .studio-content{
+    visibility: visible;
+    animation-duration: 2s;
+    animation-delay: 0.4s;
+    animation-name: fadeInRight;
+      padding-left: 60px;
+   }
+   .broadcast-media{
+    visibility: visible;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-name: fadeInLeft; 
+   }
+   .broadcast-content{
+    visibility: visible;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-name: fadeInRight;
+   }
+   .cta-media{
+    visibility: visible;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-name: fadeInLeft;   
+   }
+   .cta-content{
+    visibility: visible;
+    animation-duration: 2s;
+    animation-delay: 0.4s;
+    animation-name: fadeInRight;  
    }
    .section-head .sub-title {
     padding: 10px 30px;
@@ -248,9 +329,222 @@
    .cta .media img{
        padding-top: 30px;
    }
+   .move-1 {
+    -webkit-transform-origin: 35% 0;
+    transform-origin: 35% 0;
+    -webkit-animation: swinging 7s ease-in-out 3s forwards infinite;
+    animation: swinging 7s ease-in-out 3s forwards infinite;
+}
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(3deg);}
+    50%{-webkit-transform: rotate(-1deg)}
+    100%{-webkit-transform: rotate(4deg);}
+}
+ 
+@keyframes swinging{
+    0%{transform: rotate(3deg);}
+    50%{transform: rotate(-1deg)}
+    100%{transform: rotate(4deg);}
+}
+ .icon-bx-md{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    line-height: 90px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 25px 25px ;
+}
+.icon-bx-md i{
+    font-size: 40px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.icon-bx-md a{
+    text-decoration: none;
+}
+.one{
+    border: 3px solid #ff586e !important;
+}
+.two{
+    border: 3px solid #ffa808 !important;
+}
+.three{
+    border: 3px solid #029e76 !important;
+}
+.ecommerce-media{
+    padding-top: 40px;
+}
+.content-wraper .icon-bx-wraper{
+    display: flex;
+    align-items: center;
+    box-shadow:none;
+    padding: 0px;
+    border: none;
+    border-radius: 0px; 
+    margin-bottom: 10px;
+}
+.middle{
+    margin-left: 100px;
+}
+.ecommerce-content .sub-title{
+    padding: 10px 20px;
+}
+/* box-shadow: 0 0px 10px 4px rgb(31 66 135 / 10%);
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: 9;
+    margin-bottom: 40px;
+    animation-name: fadeInUp;
+    visibility:visible; */
+    .icon-bx-wraper .business-icon-1{
+        margin-left: 55px;
+        background-color: #ffa808;
+        box-shadow: 0 2px 15px rgb(255 168 8 / 50%);
+   }
+   .business .icon-bx-wraper{
+       margin-bottom: 0px;
+       box-shadow: none;
+       transition: all 0.5s;
+   }
+   .business .icon-bx-wraper:hover{
+    padding: 30px;   
+   box-shadow: 0 0px 10px 4px rgb(31 66 135 / 10%);
+   }
+   .business .o1:hover .background-1{
+       background-position: right;
+   }
+   .business .t2:hover .background-2{
+       background-position: right;
+   }
+   .business .t3:hover .background-3{
+       background-position: right;
+   }
+   .business .f5:hover .background-5{
+       background-position: right;
+   }
+   .business .s6:hover .background-6{
+       background-position: right;
+   }
+   .business .s7:hover .background-7{
+       background-position: right;
+   }
+   .business .e8:hover .background-8{
+       background-position: right;
+   }
+   .background-1{
+    background-image: url(yellow.png);
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 1s;
+    background-position: left;
+   }
+   .background-2{
+    background-image: url(red.png);
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 1s;
+    background-position: left;
+   }
+   .background-3{
+    background-image: url(green.png);
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 1s;
+    background-position: left;
+   }
+   .background-5{
+    background-image: url(maroon.png);
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 1s;
+    background-position: left;
+   }
+   .background-6{
+    background-image: url(orange.png);
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 1s;
+    background-position: left;
+   }
+   .background-7{
+    background-image: url(skyblue.png);
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 1s;
+    background-position: left;
+   }
+   .background-8{
+    background-image: url(red.png);
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 1s;
+    background-position: left;
+   }
 
+   .icon-bx-wraper .business-icon-2{
+        margin-left: 55px;
+        background-color: #ff586e;
+        box-shadow: 0 2px 15px rgb(255 88 110 / 50%);
+   }
+   .icon-bx-wraper .business-icon-3{
+    margin-left: 55px;
+    background-color: #029e76;
+    box-shadow: 0 2px 15px rgb(2 158 118 / 50%);
+   }
+   .icon-bx-wraper .business-icon-4{
+    margin-left: 55px;
+    background-color: #5543d1;
+    box-shadow: 0 2px 15px rgb(85 67 209 / 50%);
+   }
+   .icon-bx-wraper .business-icon-5{
+    margin-left: 55px;
+    background-color: #9e0168;
+    box-shadow: 0 2px 15px rgb(158 1 104 / 50%);;
+   }
+   .icon-bx-wraper .business-icon-6{
+    margin-left: 55px;
+    background-color: #ff8853;
+    box-shadow: 0 2px 15px rgb(255 136 83 / 50%)
+   }
+   .icon-bx-wraper .business-icon-7{
+    margin-left: 55px;
+    background-color: #00aeff;
+    box-shadow: 0 2px 15px rgb(0 174 255 / 50%)
+   }
+   .icon-bx-wraper .business-icon-8{
+    margin-left: 55px;
+    background-color: #ff586e;
+    box-shadow: 0 2px 15px rgb(255 136 83 / 50%);
+   }
+   .business a{
+       color: white;
+       text-decoration: none;
+   }
+   .contact-content .section-head{
+       text-align: left;
+   }
+   .form{
+       align-items: center;
+   }
+   .form-control{
+    box-shadow: 0 0px 10px 4px rgb(31 66 135 / 10%);
+    height: 45px;
+    border-radius: 1.5rem !important;
+    padding: 10px 20px;
+    position: relative;
+    font-size: 15px;
+    border: none;
+    margin-bottom: 20px;
+   }
+   .contact-media{
+       padding-top: 60px;
+   }
 
-
+    
 
   @media (max-width:868px){
     body.disabled{
